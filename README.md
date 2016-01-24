@@ -12,7 +12,7 @@ Feel free to make forks and suggest new improvements and versions.
 1. This theme contain two couple screen conditions - HD, it's between 1600 and 1920, standard and portable.
 2. Theme transform navigation to sidebar.
 
-![Worktime Log Issue Stopwatch Widget](http://www.redmine.org/attachments/download/13033/rwtl-stopwatch.png)
+![Dwarf Projects Index](https://www.redmine.org/attachments/download/15177/dwarf-imac-small.png)
 
 ### Installation
 1. Copy  ```production/dwarf directory``` into ```/public/themes``` directory on your Redmine instance.
