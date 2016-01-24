@@ -14,6 +14,26 @@ Feel free to make forks and suggest new improvements and versions.
 
 ![Dwarf Projects Index](https://www.redmine.org/attachments/download/15177/dwarf-imac-small.png)
 
+### Issues List
+Below you can see how's list of issues will looks with Dwarf. Almost everything managed with CSS so there's many pseudo-elements which
+contain custom icons, blocks and content also.
+
+![Dwarf Projects Issues Index](https://www.redmine.org/attachments/download/15178/dwarf-theme-issues-view.png)
+
+### Issue Card
+I decided to split content inside issue to have two different content areas for input and progression.
+
+![Dwarf Projects Issue Card](https://www.redmine.org/attachments/download/15179/dwarf-theme-issue-card.png)
+
+### Add a New Issue
+
+![Dwarf Projects New Issue](https://www.redmine.org/attachments/download/15180/dwarf-theme-new-issue.png)
+
+### Single Project Overview
+Well this thing looks typical.
+
+![Dwarf Projects Overview](https://www.redmine.org/attachments/download/15181/dwarf-theme-project-view.png)
+
 ### Installation
 1. Copy  ```production/dwarf directory``` into ```/public/themes``` directory on your Redmine instance.
 2. Restart Redmine instance.
@@ -25,6 +45,7 @@ At this moment there's no additional settings for theme, so everything you can m
 ### Additional thanks to:
 * [jQuery.Chosen] - by [Harvest]
 * [FontAwesome] - by [Dave Gandy]
+
 ### License
 This plugin is available under [CC-BY 3.0]
 
