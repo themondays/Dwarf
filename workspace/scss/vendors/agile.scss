@@ -1,0 +1,119 @@
+/**
+ * Agile by RedmineCRM
+ * Plugin URL: http://www.redminecrm.com/projects/agile/pages/1
+ * Pliging vendor URL: http://www.redminecrm.com/
+ */
+.controller-agile_boards {
+  .agile-board {
+    table.issues-board {
+      tr:hover td, tr td {
+        border: 1px #F7F6EE dashed;
+        padding: 2px;
+      }
+      th {
+        position: relative;
+        span.count {
+          &::after {
+            content: '';
+            height: 6px;
+            width: 6px;
+            background-color: #7f8c8d;
+            border-radius: 6px;
+            right: 0;
+            top: 50%;
+            display: block;
+            position: absolute;
+            margin-top: -3px;
+          }
+        }
+        &:nth-child(1) span.count::after {
+          background-color: #3498db;
+        }
+        &:nth-child(2) span.count::after {
+          background-color: #27ae60;
+        }
+        &:nth-child(3) span.count::after {
+          background-color: #8e44ad;
+        }
+        &:nth-child(4) span.count::after {
+          background-color: #34495e;
+        }
+        &:nth-child(5) span.count::after {
+          background-color: #e67e22;
+        }
+        &:nth-child(6) span.count::after {
+          background-color: #16a085;
+        }
+        &:nth-child(7) span.count::after {
+          background-color: #e74c3c;
+        }
+        &:nth-child(8) span.count::after {
+          background-color: #f39c12;
+        }
+        &:nth-child(9) span.count::after {
+          background-color: #7f8c8d;
+        }
+      }
+      td, th {
+        .issue-card {
+          position: relative;
+          background-color: $background-secondary;
+          border-color: #F7F6EE;
+          padding: 5px 10px;
+          // -webkit-transition: none 500ms cubic-bezier(1.000, 0, 0.000, 1); /* older webkit */
+          // -webkit-transition: none 500ms cubic-bezier(1.000, -0.290, 0.000, 1.300); 
+          //    -moz-transition: none 500ms cubic-bezier(1.000, -0.290, 0.000, 1.300); 
+          //      -o-transition: none 500ms cubic-bezier(1.000, -0.290, 0.000, 1.300); 
+          //         transition: none 500ms cubic-bezier(1.000, -0.290, 0.000, 1.300); /* custom */
+
+          // -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.000, 1); /* older webkit */
+          // -webkit-transition-timing-function: cubic-bezier(1.000, -0.290, 0.000, 1.300); 
+          //    -moz-transition-timing-function: cubic-bezier(1.000, -0.290, 0.000, 1.300); 
+          //      -o-transition-timing-function: cubic-bezier(1.000, -0.290, 0.000, 1.300); 
+          //         transition-timing-function: cubic-bezier(1.000, -0.290, 0.000, 1.300); /* custom */          
+          @include transition(500ms ease);
+          @include transform-property();
+          &:hover {
+            // @include transform(scale(1.05,1.05));
+            z-index: 10;
+            border-color: #3498db;
+            border-style: dashed;
+            &::after {
+              content: '';
+              height: 6px;
+              width: 6px;
+              background-color: #3498db;
+              border-radius: 6px;
+              right: 10px;
+              top: 10px;
+              display: block;
+              position: absolute;
+            }
+          }
+          .fields {
+            .issue-id {
+              strong {
+                font-weight: 600;
+                font-size: 0.95rem;
+                text-transform: uppercase;
+              }
+            }
+            .name {
+                font-weight: 100;
+                font-size: 0.75rem;
+                text-transform: uppercase;              
+            }
+            .info {
+              border-top-color: #F7F6EE;
+            }
+            .user {
+              a {
+                font-size: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

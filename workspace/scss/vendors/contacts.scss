@@ -1,0 +1,108 @@
+/**
+ * Contacts custom CSS
+ */
+
+.controller-contacts.action-index {
+	#content {
+		margin: $span-margin;
+		> h2 {
+			padding: 0;
+		}
+		#query_form {
+			width: 70%;
+			float: left;
+			margin-bottom: 0;
+		}
+		h1 {
+			margin-left: 0;
+		}
+		p {
+			.contacts_header {
+				margin-bottom: 0;
+			}
+		}
+		#contact_list {
+
+		}
+		#contact_list {
+			padding-top: 0;
+		}
+	}
+
+}
+
+#sidebar {
+	#cusomer_profile_and_issues {
+		&::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		// .contextual {
+		// 	float: none;
+		// 	a {
+		// 		width: 100%;
+		// 	}
+		// }
+	}
+	.contact {
+		&.card {
+			background-color: $background-secondary;
+			border: none;
+			table.subject_header {
+				tr { //:nth-child(2)
+					td {
+						&.avatar {
+							a#avatar {
+								padding-right: 5px;
+								img {
+									border-radius: 100%;
+								}
+							}
+						}
+						.name {
+							h2 {
+								background-color: transparent;
+								padding: 0;
+								a {
+									background-color: transparent;
+									padding: 0;
+									font-weight: 600;
+								}
+							}
+						}
+						.email {
+							margin-left: 55px;
+							padding: 0;
+							background-image: none;
+							a {
+								padding: 0;
+								font-weight: 300;
+								&:hover {
+									font-weight: 300;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#notes {
+		.note.content.preview {
+			word-break: break-all;
+		}
+	}
+	div.contact {
+		background-color: $background-primary
+	}
+	div.contact h2 {
+		padding:0;
+		border: none;
+		background-color: transparent;
+	}
+	div.contact.card {
+		width: 100%;
+	}
+}

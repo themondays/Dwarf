@@ -1,0 +1,32 @@
+/**
+ * Redpenny custom user stylesheet
+ *
+ * Author: Jarod Denison (@jaroslavius)
+ * @2013-05-25
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+html {
+	background-color: #282828;
+}
+
+/**
+ * Sidebar Logotype
+ */
+body
+{
+	padding: 0;
+	background-color: #282828;
+	background-repeat:repeat-x;
+	background-attachment: fixed;
+	background-position:center top;
+}
+
+
+body div.issue {
+	padding: 0;
+	border: none;	
+	background-color: transparent;
+}
+

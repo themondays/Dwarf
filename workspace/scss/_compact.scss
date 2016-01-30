@@ -1,0 +1,32 @@
+.issue-wrapper {
+        transition: height 0.5s ease;
+}
+.issue-wrapper * {
+	transition: all 0.5s ease;
+}
+.issue-wrapper.compact .attributes {
+	height: 0;
+	display: none;
+	max-height: 0;
+	overflow: hidden;
+	
+}
+.issue-wrapper.compact .ticket_data {
+	height: 0;
+	overflow: hidden;
+}
+
+body #content .issue-wrapper.compact .description .wiki p {
+	margin-bottom: 0;
+	font-size: 0.8em;
+}
+.issue-wrapper.compact #relations {
+        display: none;
+}
+.issue-wrapper.compact #issue_tree {
+        display: none;
+}
+.issue-wrapper.compact .subject div h3 {
+	font-size: 1.6em;
+	line-height: 1em;
+}

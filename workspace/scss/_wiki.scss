@@ -1,0 +1,47 @@
+div.wiki h3,
+div.wiki h4
+{
+	font-weight:700
+}
+
+.controller-wiki.action-show {
+	#content {
+		@include -content-box;
+		width: 70%;
+		margin: $span-margin;
+		> h2 {
+			padding: 0;
+		}
+		h1 {
+			margin-left: 0;
+		}
+		p {
+			
+		}
+	}
+}
+.issue {
+	.wiki {
+		//...
+	}
+}
+.wiki {
+	&.editable {
+		.contextual {
+			padding: 0;
+			float: right;
+		}
+	}
+	word-break: break-all;
+
+	h2, h3 {
+		background-color: transparent;
+		border-bottom:0;
+	}
+
+	img {
+		max-width:98%
+	}
+
+}
+

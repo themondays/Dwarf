@@ -1,0 +1,236 @@
+/* Details */
+.journal_list_items {
+	position: relative;
+	z-index: 1;
+	font-size: 13px;
+	font-weight: 400;
+	border-radius: 20px;
+	font-family: $typeset-secondary;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	text-align: center;
+	padding: 4px;
+	margin-right: 10px;
+}
+body #content > #history > .journal {
+	margin-bottom: 0;
+	margin-top: 0.6rem;
+}
+body #content > #history > .journal:first-child {
+	margin-top: 0;
+}
+
+.journal_message {
+	margin: 0;
+}
+
+.journal {
+	h4 {
+		margin-bottom: 0;
+		padding: 10px 0 9px 0;
+	}
+
+	.gravatar {
+		background-color: #efefef;
+		padding: 4px;
+		min-width: 28px;
+		min-height: 28px;
+		border-radius: 24px;
+	}
+
+	ul.details, .wiki {
+		margin:0;
+	}
+	.wiki {
+		p {
+			margin: 0 0 0 38px;
+			padding-bottom: 10px;
+		}
+	}
+
+	ul.details {
+		margin: 0;
+		padding: 5px 0 0 0;
+		border-color: transparent;
+
+		li {
+			position: relative;
+			padding-left: 40px;
+			padding-bottom: 15px;
+			overflow: hidden;
+			list-style: none;
+			margin-left: 0px;
+
+			&:last-child {
+				margin-bottom: 0;
+				&:after {
+					display: none;
+				}
+			}
+			&:before {
+				@extend .journal_list_items;
+				position: relative;
+				z-index: 1;
+				margin-left: -40px;
+				color: #fff;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				border-left: 1px #ddd solid;
+				height: 100%;
+				width: 0px;
+				left: 14px;
+				z-index: 0;
+			}
+
+			i {
+				text-decoration: underline;
+				font-style: normal;
+				&:first-child {
+				}
+				&:last-child {
+					font-weight: 600;
+				}
+			}
+
+		}
+	}
+	.wiki p {
+		break-word: break-all;
+		margin-left: 28px;
+	}
+	.wiki blockquote {
+		
+	}
+	.wiki blockquote p {
+		margin-left: 0;
+	}
+	.wiki > ul, .journal .wiki > ol {
+	}
+	ul.details li:nth-child(1):before {
+		content: '01';
+		background-color: #330066;
+	}
+	ul.details li:nth-child(2):before {
+		content: '02';
+		background-color: #006666;
+	}
+
+	ul.details li:nth-child(3):before {
+		content: '03';
+		background-color: #660066;
+	}
+	ul.details li:nth-child(4):before {
+		content: '04';
+		background-color: #666600;
+	}
+	ul.details li:nth-child(5):before {
+		content: '05';
+		background-color: #555;
+	}
+	ul.details li:nth-child(6):before {
+		content: '06';
+		background-color: #666;
+	}
+	ul.details li:nth-child(7):before {
+		content: '07';
+		background-color: #777;
+	}
+	ul.details li:nth-child(8):before {
+		content: '08';
+		background-color: #888;
+	}
+	ul.details li:nth-child(9):before {
+		content: '09';
+		background-color: #999;
+	}
+	ul.details li:nth-child(10):before {
+		content: '10';
+		background-color: #aaa;
+	}
+
+	/* Information */
+	.wiki {
+		min-height: 28px;
+		padding: 5px 0;
+	}
+	.wiki:before {
+		@extend .journal_list_items;
+		content: 'i';
+		float: left;
+		color: $background-primary;
+		background-color: green;
+	}
+	p {
+		padding-top: 3px;
+	}
+}
+.journal_message {
+	overflow: hidden;
+	position: relative;
+	min-height: 28px;
+	padding: 10px 1.2rem;
+	font-size: 0.895em;
+	margin-bottom: 0.6rem;
+	background-color: #eee;
+}
+.journal_message a, .journal_message a:link {
+}
+.journal_message span.helpdesk-message-date {
+	display: block;
+}
+#ticket_data {
+	position: relative;
+	overflow: hidden;
+	padding-left: 45px;
+        background-color: #f8f8f8;
+        padding-right: 10px;
+}
+#ticket_data .icon.icon-email {
+	background-image: none;
+	padding-left: 0;
+}
+#ticket_data div.contextual {
+	padding-top: 10px;
+}
+#ticket_data .attachment {
+	display: block;
+}
+#ticket_data .helpdesk-message-date {
+	display: block;
+}
+#ticket_data .icon.icon-email::before {
+        content: '\f0e0';
+		position: absolute;
+		left: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #aaa;
+        font-family: Fontawesome;
+        background-color: #fbfbfb;
+        width: 20px;
+        height: 100%;
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        margin-right: 10px;
+}
+/*
+.journal_message::before :has(.icon.icon-email-to) {
+        content: "\f00c";
+}
+*/
+.journal_message .icon.icon-email-to {
+	background-image: none;
+	padding: 0;
+}
+.journal-link {
+	padding:2px 2px 1px 2px;
+	border-radius:2px;
+	margin-right:5px;
+	background-color:$background-primary;
+}

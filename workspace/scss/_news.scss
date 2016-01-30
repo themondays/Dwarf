@@ -1,0 +1,21 @@
+/**
+ * Dwarf: News
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+.controller-news.action-show {
+	#content {
+		@include -content-box;
+		margin: $span-margin;
+		> h2 {
+			padding: 0;
+		}
+		p {
+			
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/**
+ * QUO: CSS3 Transitions Stylesheet
+ *
+ * Author: Jarod Denison (@jaroslavius)
+ * @2014-09-12
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+a {
+	transition:all .1s linear;
+	-moz-transition:all .1s linear;
+	-o-transition:all .1s linear;
+	-webkit-transition:all .1s linear
+}
+
+#sidebar a,#sidebar a.selected {
+	transition:all .1s linear;
+	-moz-transition:all .1s linear;
+	-o-transition:all .1s linear;
+	-webkit-transition:all .1s linear;
+}
+
+#main-menu li a {
+	transition:all .1s linear;
+	-moz-transition:all .1s linear;
+	-o-transition:all .1s linear;
+	-webkit-transition:all .1s linear;
+}
+
+.list.issue tr a {
+        transition:all .01s linear;
+        -moz-transition:all .01s linear;
+        -o-transition:all .01s linear;
+        -webkit-transition:all .01s linear !important;
+}

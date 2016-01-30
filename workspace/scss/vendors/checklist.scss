@@ -1,0 +1,24 @@
+/**
+ * Dwarf: Checklist Plugin
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+#checklist {
+  #checklist_items {
+    li {
+      input[type='checkbox'] {
+        position: absolute;
+        margin-left: -20px;
+        margin-top: 4px;
+      }
+      padding-left: 0;
+      margin-left: 20px;
+    }
+  }
+}
+.icon.icon-add.checklist-new-only.save-new-by-button {
+  cursor: pointer
+}

@@ -4,13 +4,11 @@ Public Version 1.0.0
 ### Inception
 Hey folks!
 
-Say "hello" to my new Hi-Res Redmine theme. I developed this theme to fit large screens - over 1600 pixels. I've used this theme for about two years and it's still in development, all fixes and improvements welcomed. Btw, pardon me for some CSS content inside SCSS files.
-
-Feel free to make forks and suggest new improvements and versions.
+Let's say "hello" to my Redmine theme. I developed this theme to fit large screens - screens over 1600 pixels width. I've used this theme for about two years and it's still in development - it's hard to make it pixel-perfect, so all fixes, PR and improvements welcomed. Overall scripts SCSS and JS not really clear.
 
 ### How it works?
-1. This theme contain two couple screen conditions - HD, it's between 1600 and 1920, standard and portable.
-2. Theme transform navigation to sidebar.
+1. Dwarf theme built responsive and support HD screens between 1600 and 1920.
+2. In HD mode theme navigation transforms to a sidebar.
 
 ![Dwarf Projects Index](https://www.redmine.org/attachments/download/15177/dwarf-imac-small.png)
 
@@ -26,6 +24,7 @@ I decided to split content inside issue to have two different content areas for 
 ![Dwarf Projects Issue Card](https://www.redmine.org/attachments/download/15179/dwarf-theme-issue-card.png)
 
 ### Add a New Issue
+I've used Chosen jQuery Plugin for transforming dropdowns to something responsive and useful. Hope it will works on your side.
 
 ![Dwarf Projects New Issue](https://www.redmine.org/attachments/download/15180/dwarf-theme-new-issue.png)
 
@@ -35,9 +34,12 @@ Well this thing looks typical.
 ![Dwarf Projects Overview](https://www.redmine.org/attachments/download/15181/dwarf-theme-project-view.png)
 
 ### Installation
-1. Copy  ```production/dwarf directory``` into ```/public/themes``` directory on your Redmine instance.
+1. Copy  ```production/dwarf directory``` to the Redmine's ```/public/themes``` directory on your Redmine instance. Basically you should have something like that /public/themes/dwarf
 2. Restart Redmine instance.
 3. Activate theme inside settings.
+
+If after Redmine instance restart theme didn't appear in your list, please ensure that theme stylesheet available at the following location:
+```/public/themes/dwarf/stypesheets/application.css```
 
 ### Settings
 At this moment there's no additional settings for theme, so everything you can manage - located inside stylesheets and javascript.
@@ -45,6 +47,7 @@ At this moment there's no additional settings for theme, so everything you can m
 ### Additional thanks to:
 * [jQuery.Chosen] - by [Harvest]
 * [FontAwesome] - by [Dave Gandy]
+* [Login Image] - Unsplash
 
 ### License
 This plugin is available under [CC-BY 3.0]
@@ -58,7 +61,7 @@ Attribution — You must give appropriate credit, provide a link to the license,
 
 In case ff you found something unappropriate or I forgot mention someone please touch me and we fix it.
 
-Developed by [Jared Denison] in 2014. 
+Developed by [Jared Denison] in 2014.
 
 [Project page on GitHub]:https://github.com/themondays/redmine_worktime_log
 [Project page]:http://themondays.ca/redmine/plugins/worktimelog/
@@ -70,6 +73,7 @@ Developed by [Jared Denison] in 2014.
 [Harvest]:http://www.getharvest.com/
 [Dave Gandy]:http://twitter.com/davegandy
 [FontAwesome]:http://fontawesome.io
+[Login Image]:http://unsplash.com
 [CC-BY 3.0]:http://creativecommons.org/licenses/by/3.0/
 
 ### Changelog

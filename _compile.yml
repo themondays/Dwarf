@@ -1,0 +1,18 @@
+'path' : './'
+'store':
+  'stylesheets':
+    'compiler'            : 'scss'
+    'source'              : 'workspace/scss'
+    'destination'         : 'production/dwarf/stylesheets'
+    'command'             : ' '
+    'extname':
+      'react'               : '.scss'
+      'store'               : '.css'
+  'javascripts':
+    'compiler'            : 'requirejs'
+    'source'              : 'workspace/javascripts'
+    'destination'         : 'production/dwarf/javascripts'
+    'command'             : ' '
+    'extname':
+      'react'               : '.js'
+      'store'               : '.js'

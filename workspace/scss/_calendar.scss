@@ -1,0 +1,60 @@
+/**
+ * Dwarf: Calendar
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+table.cal {
+	border: none;
+	thead {
+		th {
+			background-color: transparent;
+		}
+	}
+	td {
+		position: relative;
+		padding: 1.2rem;
+		border-color: $background-secondary;
+		&.today {
+			background-color: $background-secondary;
+			p.day-num {
+				background-color: $background-primary;
+			}
+		}
+		&.week-number {
+			padding-top: 32px;
+			background-color: transparent;
+		}
+		.issue {
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			word-break: break-all;
+			max-width: 100%;
+			margin: 0;
+			margin-bottom: 0.8rem;
+			> .tip {
+				z-index: 27 !important;
+				left: 100%;
+				top: 0px;
+				margin-left: 2px;
+				background-color: #fefefe !important;
+			}
+
+		}
+		> p.day-num {
+			font-size: 13px !important;
+			text-align: center;
+			margin: 10px auto;
+			background-color: $background-secondary;
+			border-radius: 25px;
+			width: 25px;
+			height: 25px !important;
+			line-height: 25px;
+		}
+	}
+}

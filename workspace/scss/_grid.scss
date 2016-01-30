@@ -1,0 +1,100 @@
+/**
+ * Dwarf: Grid Layout
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+.box {
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;	
+}
+
+#main {
+	background: $background-body;
+	margin: 0 0 $span-margin 0;
+	min-height: 320px;
+	clear: both;
+}
+
+#content > form,
+#main.nosidebar #content > form,
+#content > .autoscroll,
+#content > .filters,
+#content .tab-content,
+#content > #contact_list,
+.controller-documents.action-index #main > #content > .wiki,
+.splitcontentleft .box,
+.splitcontentleft > ul,
+.splitcontentright .box,
+#content > .splitcontentleft .box,
+#content > .splitcontentright .box,
+#content > .splitcontentleft .wiki,
+#content > .splitcontentright .wiki,
+#content > #list-top,
+#content .mypage-box,
+#content  > #history > .journal,
+#content > .tab-content > form .box {
+	width: 100%;
+	background:$background-primary;
+	float: none;
+	margin: 0;
+	border: none;
+	margin-bottom: 10px;
+	padding: $span-margin;
+	clear: both;
+}
+
+#content .tab-content {
+	clear: both;
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}	
+}
+
+#content > form,
+#content > .tab-content > form,
+#main.nosidebar #content > form {
+	display: block;
+}
+
+#content {
+	background-color: transparent;
+	width:75%;
+	float: left;
+	padding: $span-margin $span-margin 0;
+	border-right: none;
+}
+
+.controller-documents.action-index #main > #content > p,
+.controller-documents.action-index #main > #content > h4,
+#content > h2 {
+	display: block;
+	float: none;
+	text-transform: uppercase;
+	border: none;
+	margin: 0 0 10px !important;
+	background: $background-primary;
+	padding: $span-margin $span-margin 1.0rem !important;
+}
+
+.controller-documents.action-index #main > #content > h4,
+.controller-documents.action-index #main > #content > p {
+	padding-bottom: 0;
+}
+
+.controller-documents.action-index #main > #content > p {
+	padding-top: 0;
+}
+
+#main.nosidebar #content {
+	width: 100%;
+}
+
+select[multiple="multiple"] {
+	min-height: 200px;
+}

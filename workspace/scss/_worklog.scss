@@ -1,0 +1,159 @@
+/**
+ * Dwarf: WorkLog Plugin
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+#sidebar, .splitcontentleft, .splitcontentright {
+	.widget.worklog {
+		margin-top: $span-margin;
+		background: $background-secondary;
+		padding: $span-margin;
+		h3 {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}	
+
+		.chosen-container {
+			&.chosen-container-active {
+				.chosen-single {
+					b {
+						background-position: 3px 8px;
+					}
+				}
+
+			}
+
+			.chosen-search {
+				input {
+					box-shadow: none;
+					border-color: #eee;
+				}
+			}
+
+			.chosen-drop {
+				border-color: #eee;
+			}
+
+			.chosen-results {
+			  color: #444;
+			  position: relative;
+			  overflow-x: hidden;
+			  overflow-y: auto;
+			  margin: 0 4px 4px 0;
+			  padding: 0 0 0 4px;
+			  max-height: 240px;
+			  -webkit-overflow-scrolling: touch;
+
+			  li {
+			    display: none;
+			    margin: 0;
+			    padding: 5px 6px;
+			    list-style: none;
+			    line-height: 15px;
+			    word-wrap: break-word;
+			    -webkit-touch-callout: none;
+
+			    &.active-result {
+			      display: list-item;
+			      cursor: pointer;
+			    }
+
+			    &.disabled-result {
+			      display: list-item;
+			      color: #ccc;
+			      cursor: default;
+			    }
+
+			    &.highlighted {
+			      background-color: #3875d7;
+			      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+			      background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+			      background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+			      background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+			      background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+			      color: $background-primary
+			    }
+
+			    &.no-results {
+			      color: #777;
+			      display: list-item;
+			      background: #f4f4f4;
+			    }
+
+			    &.group-result {
+			      display: list-item;
+			      font-weight: bold;
+			      cursor: default;
+			    }
+
+			    &.group-option {
+			      padding-left: 15px;
+			    }
+
+				.smart-link {
+					clear: right;
+					float: right;
+					font-size: 9px;
+					padding: 2px 4px;
+					background-color: #4D85BD;
+					color: $background-primary;
+					line-height: 9px;
+					border-radius: 2px;
+				}
+
+			    em {
+			      font-style: normal;
+			      text-decoration: underline;
+			    }
+			  }
+			}
+		}
+
+	}
+	.widget.worklog .dropdown {
+		width:80%;
+		margin-bottom:10px;
+	}
+
+	.widget.worklog a.chosen-single {
+		display: block;
+		padding: 6px 10px;
+		border-color: #eee;
+		height: 36px;
+		background: white;
+		b {
+			background-position: -15px 8px;
+		}
+	}
+
+	.widget.worklog button.run {
+		width: 20%;
+		margin: 0 !important;
+		float: right;
+		height: 36px;
+		line-height: 16px;
+		border-radius: 0 2px 2px 0;
+		left: 0;
+		padding: 6px 0;
+		margin-left: 0;
+		border: none;
+		// border-color: #eee;
+		box-shadow: none;
+		text-shadow: none;
+		&[value="start"] {
+			background: #5dade2;
+			color: $background-primary
+		}
+		&[value="stop"] {
+			background: #2ecc71;
+			color: $background-primary
+		}
+		outline: none;
+
+	}
+}

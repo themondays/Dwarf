@@ -1,0 +1,155 @@
+/**
+ * Dwarf: Project
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+/**
+ * Projects Index
+ */
+
+ul.projects {
+
+	&.root {
+		-webkit-column-count:2;
+		-moz-column-count:2;
+		-ms-column-count:2;
+		-o-column-count:2;
+		column-count:2;
+	}
+
+	li.root:nth-child(odd) {
+		background-color:#fdfdfd;
+	}
+
+	li.root {
+		padding:5%;
+		background-color:#FEFEFE;
+		margin:0 0 10px;
+		display:inline-block;
+		width:100%;
+		vertical-align:top;
+		border-bottom:1px #fafafa solid;
+		border-left:1px solid #f8f8f8;
+	}
+}
+
+#projects-index {
+
+	> ul.projects {
+
+		> li > div > a {
+			font-size: 1.6em;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		ul.projects {
+			border-left: 0 solid #e0e0e0;
+			padding-left: 0;
+		}
+
+		> .root > ul.projects {
+		        padding-left: 0;
+		}
+
+		> .root > ul.projects > li > div > a {
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: 1.2em;
+		}
+
+		> .root > ul.projects .description p {
+			font-size: 0.8em;
+		}
+
+	}
+
+	li.root li.child > .child > a {
+		display: block;
+	}
+
+	li.root li.child > .child > a.my-project {
+		padding-left: 20px;
+	}
+}
+
+/**
+ * Projects Controller
+ */
+
+.splitcontentright .projects.box ul {
+	padding: 0;
+}
+
+.splitcontentright .projects.box li
+{
+	margin-bottom: 10px;
+	list-style:none
+}
+
+.splitcontentleft .projects.box li a:link,
+.splitcontentright .projects.box li a:link
+{
+	font-size: 13px;
+	// border-radius:3px;
+	// -moz-border-radius:3px;
+	// -webkit-border-radius:3px;
+	// -o-border-radius:3px;
+	// -ms-border-radius:3px;
+	// background-color:#f0f0f0;
+	// padding:6px 10px
+}
+
+.controller-projects.action-show {
+
+	#main {
+
+		#content {
+			h2 {
+				margin-bottom: $span-margin;
+			}
+
+			.wiki {
+				p:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.splitcontentleft {
+				> ul {
+					list-style: none;
+					li {
+						a {
+							//...
+						}
+					}
+				}
+
+				.box {
+					&:nth-child(1) {
+						background-color: #f9f9f9;
+					}
+					&:nth-child(3) {
+						background-color: #f8f8f8;
+					}
+				}
+			}
+
+			.members.box {
+				p {
+					> a {
+						&:nth-child(1) {
+							&:before {
+								//...
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,402 @@
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;
+$screen-xl-min: 1600px;
+@media (max-width: $screen-xs-max) {
+	#header h1 {
+		display: inline-block;
+		font-size: 16px;
+	}
+	#sidebar, #content {
+		width: 100%;
+		clear: both;
+		float: none;
+		padding: 20px;
+		margin: 0;
+	}
+	#sidebar {
+		h3 {
+			padding: 0;
+		}
+		li {
+			a {
+				padding: 0;
+			}
+		}
+		.contextual {
+			padding: 0;
+		}
+		ul.queries {
+			li {
+				width: 25%;
+				float: left;
+				display: block;
+				padding: 5px 10px;
+				margin: 0;
+				@include box-sizing(border-box);
+				&:first-child {
+					clear: left;
+				}
+				&:last-child {
+					clear: right;
+				}
+			}
+		}
+	}
+	#content {
+		.contextual {
+			text-align: left;
+		}
+		div.issue {
+			table.attributes {
+				tbody {
+					tr {
+						th, td {
+							//..
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	#sidebar {
+		width: 40%;
+		padding: 20px;
+		margin: 0;
+	}
+	#content {
+		width: 60%;
+		padding: 20px;
+		margin: 0;
+	}
+}
+@media (max-width: $screen-sm-max) {
+	body {
+		min-width: 0;
+		padding-top: 0;
+	}
+	#top-menu {
+		overflow: hidden;
+	}
+
+	body[class^="controller-"],
+	body[class*="controller-"] {
+		#header {
+			h1 {
+				text-align: center;
+				font-size: 1.6em;
+				width: 100%;
+				max-width: none;
+				padding: 0 1.6em;
+				a {
+					white-space: nowrap;
+					word-wrap: nowrap;
+					font-size: 1em;
+				}
+				&::before {
+					float: none;
+					width: 48px;
+					height: 48px;
+					line-height: 48px;
+					border-radius: 48px;
+					font-size: 24px;
+					padding: 0;
+					background-color: #000;
+					color: #5c5c5c;
+					text-align: center;
+					display: block;
+					margin: 0 auto 20px;
+				}
+				&::after {
+					content: '...';
+					float: none;
+					height: 5px;
+					line-height: 5px;
+					padding: 0 0 20px;
+					border-radius: 48px;
+					font-size: 48px;
+					color: #000;
+					text-align: center;
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	#header{
+		padding: 20px;
+		margin: 0;
+		h1 {
+			margin: 0 !important;
+		}
+		#main-menu {
+			background: transparent;
+			position: static;
+			margin: 0;
+			padding: 0;
+			&::before {
+				content: "\f0c9";
+				font-family: Fontawesome;
+				color: $color-header;
+				display: block;
+				width: 48px;
+				height: 48px;
+				line-height: 48px;
+				border-radius: 48px;
+				background-color: #000;
+				padding: 0;
+				text-align: center;
+				margin: 0 auto;
+				font-size: 18px;
+			}
+			&:hover {
+				> ul {
+					opacity: 1;
+					height: auto;
+					z-index: 999;
+					margin: 20px 0 0;
+					li {
+						margin-bottom: 2px;
+					}
+				}
+			}
+			ul {
+				min-height: 0;
+				height: 0;
+				overflow: hidden;
+				// z-index: -1;
+				// position: absolute;
+				width: 100%;
+				li {
+					display: block;
+					float: left;
+					width: 50%;
+					margin: 0;
+					a {
+					}
+				}
+			}
+		}
+	}
+	#main {
+		width: 100%;
+		max-width: 100%;
+	}
+	#quick-search {
+		display: none;
+	}
+	.controller-issues #content .issue.details {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		background: transparent;
+		position: relative;
+	}
+
+	.controller-issues #content #history {
+		width: 100%;
+		float: none;
+	}
+	.pagination, p.other-formats {
+		width: 100%;
+		float: none;
+		clear: both;
+		text-align: center;
+	}
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+	#sidebar {
+		width: 30%;
+		padding: 20px;
+		margin: 0;
+	}
+	#content {
+		width: 70%;
+		padding: 20px;
+		margin: 0;
+		.issue {
+			.attributes {
+				th {
+					width: 20%;
+				}
+				td {
+					width: 30%;
+				}
+			}
+		}
+	}
+}
+@media (min-width: $screen-lg-min) {
+}
+
+@media (min-width: $screen-xl-min) {
+	body, html {
+		background-color: $background-body;
+		padding: 0;
+	}
+	#footer .bgl, #footer .bgr {
+		background-color: $background-body;
+		color: #5c5c5c;
+	}
+	body[class^="controller-"],
+	body[class*="controller-"] {
+		#header {
+			h1 {
+				text-align: center;
+				font-size: 1.6em;
+				a {
+					white-space: nowrap;
+					word-wrap: nowrap;
+					font-size: 1em;
+				}
+				&::before {
+					float: none;
+					width: 48px;
+					height: 48px;
+					line-height: 48px;
+					border-radius: 48px;
+					font-size: 24px;
+					padding: 0;
+					background-color: #000;
+					color: #5c5c5c;
+					text-align: center;
+					display: block;
+					margin: auto;
+				}
+				&::after {
+					content: '...';
+					float: none;
+					height: 5px;
+					line-height: 5px;
+					padding: 0 0 20px;
+					border-radius: 48px;
+					font-size: 48px;
+					color: #000;
+					text-align: center;
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+	}
+	#header {
+		position: fixed;
+		width:18%;
+		height: 100% !important;
+		float:left;
+		clear:left;
+		margin-top: 32px;
+		#quick-search {
+			background-color: transparent;
+			width: 100%;
+			display: block;
+			float: none;
+			clear: both;
+			label {
+				position: absolute;
+			}
+			input, input:focus {
+				padding-left: 75px;
+				@include box-sizing(border-box);
+				width: 100%;
+			}
+			#project_quick_jump_box {
+				width: 100%;
+				display: block;
+			}
+			form {
+				display: block;
+				width: 100%;
+			}
+		}
+		h1 {
+			font-size: 1.6rem;
+			padding: 0 24px;
+			width: 100%;
+			clear: both;
+			margin: 0;
+			@include box-sizing(border-box);
+			a {
+				font-size: 1rem;
+			}
+		}
+		#main-menu {
+			background-color: transparent;
+			ul {
+				li {
+					background-color: transparent;
+					clear: both;
+					float: none;
+					display: block;
+					width: 100%;
+					margin-bottom: 2px;
+					a {
+						padding: 4px 16px 4px;
+						&.selected, &:hover {
+							color: $color-header;
+							background-color: $background-header-hover;
+							border-radius: 2px;
+						}
+					}
+				}
+			}
+		}
+		&:after {
+			content: 'Themed by Jared Denisov';
+			color: #aaa;
+			position: absolute;
+			bottom: 40px;
+			width: 100%;
+			text-align: center;
+			font-size: 11px;
+		}
+
+	}
+	#main {
+		margin-top: 32px;
+		margin-left: 18%;
+		width:82%;
+		float:left;
+		clear:right;
+	}
+	#top-menu {
+		position: fixed;
+		height: 32px;
+		width: 100%;
+		z-index: 90;
+	}
+	#sidebar {
+		width: 21%;
+		h3 {
+			// font-size: 15px;
+			// font-weight: 600;
+			// > a {
+			// 	max-width: 90px;
+			// 	padding: 0;
+			// }
+		}
+		.widget {
+			&.worklog {
+				.timer-container .stopwatch {
+
+				}
+			}
+		}
+	}
+	#content {
+		width: 79%;
+		float: left;
+	}
+	.bgr::after {
+		display: none;
+	}
+}

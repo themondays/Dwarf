@@ -1,0 +1,179 @@
+/**
+ * Dwarf: Split-Screen Settings
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+div.issue .subject h3 {
+	line-height: 1em;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.next-prev-links.contextual {
+	padding: 0;
+}
+
+.controller-issues #content #history > h3 {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color: $background-primary;
+	padding: $span-margin $span-margin;
+}
+
+body #content p.author {
+	font-size: 0.8rem;
+}
+
+body #content p.author a:nth-child(2) {
+	//...
+}
+
+.controller-issues #content .issue.details {
+	width: 50%;
+	float: left;
+	margin-right: 1%;
+	background: transparent;
+	position: relative;
+	@include transition("width 500ms ease");
+	.attachments {
+		.thumbnails > div {
+			vertical-align: top;
+			padding: 7px;
+			border-width: 1px;
+		}
+	}
+	&.fullwidth {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	.description,
+	#issue_tree,
+	#checklist,
+	#relations {
+		.contextual {
+			padding: 0;
+		}
+		clear: both;
+		.contextual {
+			padding: 0;
+			a {
+				background-image: none;
+				display: inline-block;
+				margin: 0 1px;
+				height: 21px;
+				line-height: 16px;
+				border-radius: 2px;
+				left: 0;
+				padding: 0 10px;
+				margin-left: 0;
+				border: none;
+				box-shadow: none;
+				text-shadow: none;
+				background: #179e7f;
+				color: $background-primary;
+				text-decoration: none;
+				@include box-shadow(inset 0 -2px 0 0 rgba(0, 0, 0, 0.2));
+				outline: none;
+				line-height: 21px; 
+			}
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+
+		}
+		> p {
+			> strong {
+				font-size: 18px;
+				font-weight: 300;
+				text-transform: uppercase;
+			}
+		}
+	}
+	#issue_tree,
+	#relations {
+
+	}
+}
+
+.controller-issues #content .issue.details .issue-wrapper {
+        background: $background-secondary;
+	width: 100%;
+	height: 100%;
+	padding: $span-margin;
+	
+}
+
+.controller-issues #content #history {
+	width: 49%;
+	float: left;
+}
+
+.controller-issues #content #history > *:nth-child(2) {
+	margin-top: 0;
+}
+
+.controller-issues #content > h2 {
+	margin-bottom: 12px;
+}
+
+.controller-issues #content div.attachments > p {
+	padding: 10px;
+	background-color: #F7F6EE;
+	margin-bottom: 10px;
+}
+
+.controller-issues #content div.attachments > p .delete {
+	float: right;
+}
+
+.controller-issues #content div.attachments > p .author {
+	display: block;
+}
+
+.splitcontent {
+	overflow: visible;
+}
+
+.splitcontentleft .news.box p,
+.splitcontentright .news.box p {
+	color: $color-raw-text;
+	font-size: 18px;
+	font-weight: 600;
+	.summary, i, em, .author {
+		font-size: 13px;
+		font-weight: 400;
+		font-style: normal;
+	}
+}
+
+.splitcontentleft .news.box p a:first-child,
+.splitcontentright .news.box p a:first-child
+{
+
+	// font-size: 10px;
+	// display: block;
+	color: $color-raw-text;
+	// background-color:#f0f0f0;
+	// padding:6px 10px
+}
+.splitcontentleft .news.box p a:last-child,
+.splitcontentright .news.box p a:last-child
+{
+	font-weight: 600;
+	color: $color-raw-text;
+}
+
+.splitcontentleft h2
+{
+	background-color:transparent;
+	padding:0;
+	margin:20px 0 5px
+}

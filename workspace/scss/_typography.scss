@@ -1,0 +1,97 @@
+/**
+ * Dwarf: Typography
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('font/fontawesome-webfont.eot?v=3.1.0');
+  src: url('font/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'), url('font/fontawesome-webfont.woff?v=3.1.0') format('woff'), url('font/fontawesome-webfont.ttf?v=3.1.0') format('truetype'), url('font/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+}
+
+html body, body,#wrapper {
+	font-family: $typeset-primary;
+	font-size: 13px;
+}
+
+h1,h2,h3,h4 {
+	font-family: $typeset-primary;
+	-webkit-font-smoothing: antialiased;
+}
+
+h2,h3,h4 {
+	border-bottom:0
+}
+
+h3,h4 {
+	font-weight:400
+}
+
+h1, .wiki h1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin:0 0 0 .25em;
+	padding:0 0 10px;
+	text-align:left
+}
+
+h2 {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	font-weight: 300;
+	color: $color-base;
+	border-top: none;
+	img.gravatar {
+		margin: -2px 5px 0 0
+	}
+}
+
+a:link,
+a:visited {
+	color: $color-link;
+}
+a:hover, a:active {
+	color: $color-hover;
+	text-decoration: underline;
+}
+
+p {
+	color: $color-base;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 0;
+	font-size: 0.9375rem;
+	line-height: 1.5em;
+}
+
+body {
+	font: 400 0.8375rem/1.65 $typeset-secondary
+}
+
+.description {
+	font-size: 0.9375rem;
+	line-height: 1.5em;
+}
+
+/**
+ * Code
+ */
+pre,
+code,
+.line-code,
+table.filecontent
+td.line-code pre  {
+	font-family: $typeset-secondary;
+}

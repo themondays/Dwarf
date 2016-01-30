@@ -1,0 +1,121 @@
+/**
+ * Redpenny: Icons Stylesheet
+ *
+ * Author: Jarod Denison (@jaroslavius)
+ * @2013-05-25
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+
+.action-settings #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f013";
+	padding-right: 5px;
+}
+
+.controller-projects.action-show #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f132";
+	padding-right: 5px;
+}
+
+.controller-activities #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f135";
+	padding-right: 5px;
+}
+
+.controller-versions #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f018";
+	padding-right: 5px;
+}
+
+.controller-issues #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f145";
+	padding-right: 5px;
+}
+
+.controller-calendars #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f073";
+	padding-right: 5px;
+}
+
+.controller-news #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f06c";
+	padding-right: 5px;
+}
+
+.controller-documents #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f02d";
+	padding-right: 5px;
+}
+
+.controller-wiki #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f14b";
+	padding-right: 5px;
+}
+
+.controller-files #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f0b1";
+	padding-right: 5px;
+}
+
+.controller-repositories #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f074";
+	padding-right: 5px;
+}
+
+.controller-gantts #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f080";
+	padding-right: 5px;
+}
+
+.controller-welcome #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f015 ";	
+	padding-right: 5px;
+	font-weight: 100;
+}
+
+.controller-users #header h1:before
+{
+	font-family: Fontawesome;
+	content: "\f0f0 ";
+	padding-right: 5px;
+}
+
+#top-menu li a.home:before {
+	font-family: Fontawesome;
+	content: "\f015 ";	
+}
+#top-menu #account a.my-account:before {
+	font-family: Fontawesome;
+	content: "\f0f0 ";
+}
+#top-menu #account a.logout:before {
+	font-family: Fontawesome;
+	content: "\f08b ";
+}

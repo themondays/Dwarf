@@ -1,0 +1,39 @@
+/**
+ * Dwarf: Pagination
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+.pagination {
+	width: 60%;
+	float: left;
+
+	a.page, .current.page {
+		display: inline-block;
+		height: 32px;
+		width: 32px;
+		text-align: center;
+		line-height: 32px;
+		background-color: $background-primary;
+		border-radius:3px;
+		margin-right: 5px;
+	}
+
+	.current.page {
+		color: #aaa;
+		background-color: $background-secondary;
+	}
+
+	.spacer {
+		padding-right: 5px;
+	}
+}
+
+.other-formats {
+	width: 40%;
+	float: right;
+	clear: right;
+}

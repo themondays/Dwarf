@@ -1,0 +1,142 @@
+/**
+ * Dwarf: Login Page
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+.controller-account.action-login {
+	padding: 0;
+
+	#header, #top-menu, #footer {
+		opacity: 0.075;
+		display: none;
+	}
+
+	#main {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		position: absolute;
+	}
+
+	#content {
+		background: #000 url(../images/splash/splash2.jpg) no-repeat center;
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 15% 1.2rem;
+	}
+
+	#login-form {
+		form {
+			table
+			{
+				&::before {
+					content: '';
+					position: absolute;
+					width: 228px;
+					height: 338px;
+					left: -200px;
+					top: 0;
+					left: 0;
+					margin-left: -235px;
+					// Place for Logo
+					// background: url(../images/branding/login-logo.png);
+				}
+
+				display: block;
+				position: relative;
+				padding:25px 28px;
+				background: url(../images/splash/splash2-overlay.jpg) no-repeat center;
+				text-align:left;
+				width:512px;
+				font-family:lucida grande,verdana;
+				font-size:14px;
+				border-radius:2px;
+				border: 1px solid;
+				border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+
+				tr {
+					display: block;
+					clear: both;
+
+					&:nth-child(3) {
+						width: 50%;
+						display: inline-block;
+						float: left;
+					}
+
+					&:nth-child(4) {
+						width: 50%;
+						display: inline-block;
+						td {
+
+							&:first-child {
+								padding: 18px 0;
+								float: left;
+
+								a {
+									display: block;
+									text-align: right;
+									font-family: $typeset-primary;
+									font-size: 18px;
+									font-weight: 600;
+
+								}
+							}
+						}
+					}
+					td {
+						display: block;
+
+						&:first-child {
+							text-align: left !important;
+						}
+
+						label {
+							text-align: left;
+							color: #fff;
+							font-family: $typeset-primary;
+							font-size: 18px;
+						}
+
+						input#username, input#password
+						{
+							width:100%;
+							font-size:16px;
+							height: 48px;
+							padding:10px;
+							display: block;
+							margin-bottom:10px;
+							outline: none;
+							color: #000;
+							background-color: rgba(255,255,255,.5);
+							&:focus {
+								border-color: #ddd;
+								background-color: rgba(255,255,255,.8);
+							}
+						}
+
+						input[type="submit"] {
+							margin-top: 3px;
+							background-color: #3498db;
+							font-size: 18px;
+							padding: 8px 16px;
+							color: #fff;
+							font-weight: 600;
+							font-family: $typeset-primary;
+						}
+					}
+				}
+
+				tbody {
+					display: block;
+				}
+			}
+		}
+	}
+}

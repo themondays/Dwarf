@@ -1,0 +1,43 @@
+/**
+ * Dwarf: WrokLog Stopwatch
+ *
+ * Author: Jared Denison (@jaroslavius)
+ * @2014-01-01
+ * @license http://creativecommons.org/licenses/by/3.0
+ *
+ */
+
+body {
+	padding-bottom: 50px;
+}
+
+#stopwatch {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	background: #333;
+	padding: 10px;
+	z-index: 1000;
+}
+
+#stopwatch select {
+	-webkit-appearance: none;
+	-moz-appearance: window;
+	background: $background-primary;
+	color: #101010;
+	border: 1px #ddd solid;
+	border-radius: 0;
+	padding: 6px 10px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+#stopwatch .timer {
+	color: $background-primary;
+	font-weight: 600;
+	padding: 0 20px;
+}

@@ -1,0 +1,36 @@
+/**
+ * Tabs
+ */
+#content .tabs {
+	margin-bottom: 1.2em;
+	position: relative;
+	background: $background-primary;
+	overflow: visible;
+	min-height: 66px;
+}
+#content .tabs ul {
+	border-bottom: 0;
+	padding-bottom: $span-margin;
+	padding-left: $span-margin;
+}
+#content .tabs ul li {
+	background-color: transparent;
+	margin: 0;
+}
+#content .tabs ul li a {
+	border: none;
+	padding: 5px;;
+	border-radius: 0;
+	border-bottom: none;
+	background-color: transparent;
+}
+#content .tabs ul li a.selected {
+	border: none;
+	background-color: #034599;
+	color: $background-primary
+}
+#content .tabs ul li a:hover {
+	background-color: #034599;
+	color: $background-primary
+}
+
