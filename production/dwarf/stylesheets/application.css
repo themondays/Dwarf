@@ -2092,7 +2092,7 @@ tr.open span.expander {
  */
 p.nodata, body .nodata, body #content .nodata, .warning, div.flash, .warning, .conflict {
   border-width: 0;
-  margin: 0;
+  margin: 0 0 10px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
