@@ -42,7 +42,7 @@
 	float: none;
 	margin: 0;
 	border: none;
-	margin-bottom: 10px;
+	margin-bottom: $span-margin;
 	padding: $span-margin;
 	clear: both;
 }
@@ -77,7 +77,7 @@
 	float: none;
 	text-transform: uppercase;
 	border: none;
-	margin: 0 0 10px !important;
+	margin: 0 0 $span-margin;
 	background: $background-primary;
 	padding: $span-margin $span-margin 1.0rem !important;
 }

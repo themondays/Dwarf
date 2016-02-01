@@ -8,6 +8,12 @@
 @mixin box-shadow($str) {
 	@include universe(box-shadow, $str);
 }
+@mixin columns($str) {
+	@include universe(column-count, $str);
+}
+@mixin gap($str) {
+	@include universe(column-gap, $str);
+}
 @mixin transition($str) {
 	@include universe(transition, $str);
 }

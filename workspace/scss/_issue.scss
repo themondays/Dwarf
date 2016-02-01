@@ -29,82 +29,84 @@
 		}
 	}
 	.issue {
-		position: relative;
-		background-color: transparent;
-		padding: 0;
-		background:#FFFFEC;
-
-		table img.gravatar {
-			margin-top: 2px;
-			width: auto;
-			height: auto;
-			min-height: 14px;
-			min-width: 14px;
-		}
-		img.gravatar {
-			margin: 0 10px 15px 0;
-			border-radius: 100%;
-		}
-
-		.subject h3 {
-			padding-top: 0;
-			padding-bottom: 0px;
-			font-size: 24px;
-		}
-
 		.issue-wrapper {
-			background-color: #faf8f5;
-			position: static;
-			> hr {
-				background: #f5f5f5 none repeat scroll 0 0;
-				margin-top: 10px;
-				margin-bottom: 20px;
+			position: relative;
+			background-color: transparent;
+			padding: 0;
+			// background:#FFFFEC;
+
+			table img.gravatar {
+				margin-top: 2px;
+				width: auto;
+				height: auto;
+				min-height: 14px;
+				min-width: 14px;
 			}
-		}
-		div.wiki {
-			h3 {
-				text-decoration:underline
-			}
-			a:link {
-				text-decoration: underline;
-				color: $color-raw-text;
-			}
-		}
-		.attributes {
-			tr {
-				border-bottom: 1px #ddd solid;
+			img.gravatar {
+				margin: 0 10px 15px 0;
+				border-radius: 100%;
 			}
 
-			th {
-				width: 20%;
+			.subject h3 {
+				padding-top: 0;
+				padding-bottom: 0px;
+				font-size: 24px;
 			}
-			td {
-				width: 30%;
-			}
-			td.progress {
-				margin: 1px 0 1px 0px;
-				position: relative;
-				table.progress {
-					margin: 0;
-					min-width: 70%;
-					max-width: 70%;
-					.todo {
-						height: 17px;
-						border-radius: 2px 0 0 2px;
-					}
+
+			.issue-wrapper {
+				background-color: #faf8f5;
+				position: static;
+				> hr {
+					background: #f5f5f5 none repeat scroll 0 0;
+					margin-top: 10px;
+					margin-bottom: 20px;
 				}
-				.percent {
+			}
+			div.wiki {
+				h3 {
+					text-decoration:underline
+				}
+				a:link {
+					text-decoration: underline;
+					color: $color-raw-text;
+				}
+			}
+			.attributes {
+				tr {
+					border-bottom: 1px #ddd solid;
+				}
+
+				th {
+					width: 20%;
+				}
+				td {
 					width: 30%;
-					background-color: rgb(23, 158, 127);
-					display: inline-block;
-					color: $background-primary;
-					height: 18px;
-					line-height: 17px;
-					padding: 1px 0;
-					font-size: 0.6rem;
-					float: left;
-					text-align: center;
-					border-radius: 0 2px 2px 0; // radius looks nice
+				}
+				td.progress {
+					margin: 1px 0 1px 0px;
+					position: relative;
+					table.progress {
+						margin: 0;
+						min-width: 70%;
+						max-width: 70%;
+						.todo {
+							height: 17px;
+							border-radius: 2px 0 0 2px;
+						}
+					}
+					.percent {
+						width: 30%;
+						background-color: rgb(23, 158, 127);
+						display: inline-block;
+						color: $background-primary;
+						height: 18px;
+						line-height: 17px;
+						padding: 1px 0;
+						font-size: 0.6rem;
+						float: left;
+						text-align: center;
+						border-radius: 0 2px 2px 0; // radius looks nice
+					}
 				}
 			}
 		}

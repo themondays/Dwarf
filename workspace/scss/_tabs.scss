@@ -2,7 +2,7 @@
  * Tabs
  */
 #content .tabs {
-	margin-bottom: 1.2em;
+	margin-bottom: $span-margin;
 	position: relative;
 	background: $background-primary;
 	overflow: visible;
@@ -19,7 +19,7 @@
 }
 #content .tabs ul li a {
 	border: none;
-	padding: 5px;;
+	padding: 5px;
 	border-radius: 0;
 	border-bottom: none;
 	background-color: transparent;

@@ -121,7 +121,7 @@ body #content p.author a:nth-child(2) {
 }
 
 .controller-issues #content > h2 {
-	margin-bottom: 12px;
+	margin-bottom: $span-margin;
 }
 
 .controller-issues #content div.attachments > p {

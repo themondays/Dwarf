@@ -7,44 +7,120 @@
  *
  */
 
+
 /**
  * Projects Index
  */
-
-ul.projects {
-
-	&.root {
-		-webkit-column-count:2;
-		-moz-column-count:2;
-		-ms-column-count:2;
-		-o-column-count:2;
-		column-count:2;
-	}
-
-	li.root:nth-child(odd) {
-		background-color:#fdfdfd;
-	}
-
-	li.root {
-		padding:5%;
-		background-color:#FEFEFE;
-		margin:0 0 10px;
-		display:inline-block;
-		width:100%;
-		vertical-align:top;
-		border-bottom:1px #fafafa solid;
-		border-left:1px solid #f8f8f8;
-	}
-}
-
 #projects-index {
+
+	ul.projects {
+		&.root {
+			@include columns($columns-project);
+			@include gap($span-margin);
+			li {
+				position: relative;
+				display: block;
+				&.root {
+					margin:0 0 $span-margin;
+				}
+				div.root {
+					position: relative;
+				}
+				a {
+					padding-left: 0;
+					display: block;
+					background-image: none;
+					&.project {
+						&:before {
+							font-size: 11px;
+							position: absolute;
+							right: 0;
+							content: "\f006";
+							font-family: Fontawesome;
+							padding-right: 5px;
+							opacity: 0.5;
+						}
+						&.my-project {
+							background-image: none;
+							position: relative;
+							&:before {
+								content: "\f005";
+								right: 0;
+								font-family: Fontawesome;
+								padding-right: 5px;
+								opacity: 0.5;
+							}					
+						}
+					}
+				}
+
+			}
+			.description {
+				font-size: 0.8em;
+			}
+			.child {
+				.description {
+					font-size: 1em;
+				}
+			}
+
+		}
+
+		li.root:nth-child(odd) {
+			background-color:#fdfdfd;
+		}
+
+		li.root {
+			padding:5%;
+			background-color:#FEFEFE;
+			margin:0 0 $span-margin;
+			display:inline-block;
+			width:100%;
+			vertical-align:top;
+			border-bottom:1px #fafafa solid;
+			border-left:1px solid #f8f8f8;
+			p {
+				margin-bottom: 0;
+			}
+			ol {
+				padding: 0;
+				li {
+					padding: 0;
+					// &:first-child {
+					// 	&:before {
+					// 		content: '';
+					// 		position: absolute;
+					// 		height: 100%;
+					// 		width: 0;
+					// 		// border-radius: 5px;
+					// 		// width: 5px;
+					// 		// height: 5px;
+					// 		border: 2px #ddd solid;
+					// 		left: 0;
+					// 		top: 0;
+					// 	}
+					// }
+				}
+			}
+		}
+	}
 
 	> ul.projects {
 
-		> li > div > a {
-			font-size: 1.6em;
-			font-weight: 600;
-			text-transform: uppercase;
+		> li {
+			a {
+				font-size: 1.2em;
+			}
+
+			> .root {
+				> a {
+					border-bottom: 1px #efefef solid;
+					padding-bottom: 10px;
+					font-size: 1.6em;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+			}
 		}
 
 		ul.projects {
@@ -62,19 +138,12 @@ ul.projects {
 			font-size: 1.2em;
 		}
 
-		> .root > ul.projects .description p {
-			font-size: 0.8em;
-		}
-
 	}
 
 	li.root li.child > .child > a {
 		display: block;
 	}
 
-	li.root li.child > .child > a.my-project {
-		padding-left: 20px;
-	}
 }
 
 /**

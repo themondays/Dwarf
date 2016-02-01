@@ -176,7 +176,6 @@ table.list {
 				background-color: #ddd;
 				margin-top: 2px;
 				margin-right: 5px;
-				border-radius:100%;
 				background-color:#000;
 				width:16px;
 				height:16px;
@@ -242,7 +241,7 @@ table.list {
 		}
 		&.assigned-to-me > td:first-child:before {
 			content: "\f101";
-			background-color: #55ff55;
+			background-color: #A3DCA3;
 		}
 		&.overdue > td:first-child:before {
 			content: "\f017";
@@ -314,7 +313,7 @@ table.list {
 		}
 	}
 	tbody tr:hover {
-		background-color: #ecf0f1 !important;
+		background-color: $background-secondary !important;
 		color: #7f8c8d !important;
 		a {
 			color: #7f8c8d !important;
