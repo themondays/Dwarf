@@ -243,9 +243,12 @@ $screen-xl-min: 1600px;
 		background-color: $background-body;
 		padding: 0;
 	}
-	#footer .bgl, #footer .bgr {
-		background-color: $background-body;
-		color: #5c5c5c;
+	#footer {
+		float: right;
+		.bgl, .bgr {
+			background-color: $background-body;
+			color: #5c5c5c;
+		}
 	}
 	body[class^="controller-"],
 	body[class*="controller-"] {

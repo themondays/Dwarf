@@ -281,9 +281,8 @@ body.controller-welcome.action-index #wrapper3 #main {
 	position:relative;
 	padding:0;
 	height:32px;
-	padding-top:0
 	ul {
-		padding:0 21px
+		padding: 0 20px;
 	}
 
 	li,
@@ -391,9 +390,9 @@ body.controller-welcome.action-index #wrapper3 #main {
 	color:#666;
 	font-size:9px;
 	margin: 20px 0 4px 0;
-	text-align:left;
+	text-align: left;
 	padding: 0;
-
+	float: none;
 	a {
 		&:hover {
 			background:#666 none repeat scroll 0 0;
