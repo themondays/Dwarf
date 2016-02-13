@@ -8,7 +8,7 @@
  */
 
 .controller-news.action-show {
-	#content {
+	> #content {
 		@include -content-box;
 		margin: $span-margin;
 		> h2 {

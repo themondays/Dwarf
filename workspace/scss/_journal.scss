@@ -44,6 +44,9 @@ body #content > #history > .journal:first-child {
 		margin:0;
 	}
 	.wiki {
+		ul, ol {
+			margin-left: $span-margin;
+		}
 		p {
 			margin: 0 0 0 38px;
 			padding-bottom: 10px;

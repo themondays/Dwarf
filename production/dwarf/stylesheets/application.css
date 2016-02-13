@@ -271,6 +271,8 @@ body #content > #history > .journal:first-child {
     border-radius: 24px; }
   .journal ul.details, .journal .wiki {
     margin: 0; }
+  .journal .wiki ul, .journal .wiki ol {
+    margin-left: 1.2rem; }
   .journal .wiki p {
     margin: 0 0 0 38px;
     padding-bottom: 10px; }
@@ -1027,8 +1029,11 @@ input[type="submit"], button, a[accesskey="r"], #attach_files_link {
  *
  */
 .box {
-  border: 1px solid;
-  border-color: #e5e6e9 #dfe0e4 #d0d1d5; }
+  border: 0 solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  padding: 0; }
+  .box fieldset {
+    margin-bottom: 1.2rem; }
 
 #main {
   background: #f5f5f5;
@@ -1785,14 +1790,14 @@ div.wiki h4 {
  * @license http://creativecommons.org/licenses/by/3.0
  *
  */
-.controller-news.action-show #content {
+.controller-news.action-show > #content {
   background: #fff;
   margin: 0;
   border: none;
   margin-bottom: 1.2rem;
   padding: 1.2rem;
   margin: 1.2rem; }
-  .controller-news.action-show #content > h2 {
+  .controller-news.action-show > #content > h2 {
     padding: 0; }
 
 /**
@@ -1820,8 +1825,8 @@ table.list {
     text-transform: uppercase;
     border-bottom: 1px #fafafa solid; }
   table.list tbody tr td {
-    font-size: 11px;
-    padding: 6px; }
+    font-size: 12px;
+    padding: 0.6rem; }
     table.list tbody tr td.checkbox {
       font-size: 11px;
       padding: 6px 10px 6px 3px; }
@@ -2133,6 +2138,22 @@ tr.open span.expander {
  * @license http://creativecommons.org/licenses/by/3.0
  *
  */
+#content .flash.notice {
+  background-color: #179e7f;
+  background-position: 1.2rem;
+  padding: 1.2rem 1.2rem 1.2rem 3rem;
+  color: #fff;
+  margin-bottom: 1.2rem; }
+#content #errorExplanation {
+  background-color: #dd0000;
+  background-position: 1.2rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  color: #fff;
+  margin-bottom: 1.2rem; }
+  #content #errorExplanation ul {
+    margin: 0;
+    padding-left: 3rem; }
+
 p.nodata, body .nodata, body #content .nodata, .warning, div.flash, .warning, .conflict {
   border-width: 0;
   margin: 0 0 10px;

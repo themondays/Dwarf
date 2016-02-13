@@ -62,8 +62,8 @@ table.list {
 		}
 		tr {
 			td {
-				font-size: 11px;
-				padding: 6px;
+				font-size: $font-size-table-list;
+				padding: $span-margin/2;
 				&.checkbox {
 					font-size: 11px;
 					padding: 6px 10px 6px 3px;

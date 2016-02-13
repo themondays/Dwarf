@@ -23,7 +23,7 @@ html {
 
 html body, body,#wrapper {
 	font-family: $typeset-primary;
-	font-size: 13px;
+	font-size: $font-size-primary;
 }
 
 h1,h2,h3,h4 {
@@ -40,7 +40,7 @@ h3,h4 {
 }
 
 h1, .wiki h1 {
-	font-size: 1.5rem;
+	font-size: $font-size-h1;
 	font-weight: 400;
 	margin:0 0 0 .25em;
 	padding:0 0 10px;
@@ -48,7 +48,7 @@ h1, .wiki h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: $font-size-h2;
 	text-transform: capitalize;
 	font-weight: 300;
 	color: $color-base;

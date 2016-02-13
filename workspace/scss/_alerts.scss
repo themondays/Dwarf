@@ -6,7 +6,29 @@
  * @license http://creativecommons.org/licenses/by/3.0
  *
  */
+#content {
+	.flash {
+		&.notice {
+			background-color: #179e7f;
+			background-position: $span-margin;
+			padding: $span-margin $span-margin $span-margin $span-margin*2.5;
+			color: #fff;
+			margin-bottom: $span-margin;
+		}
+	}
 
+	#errorExplanation {
+			background-color: #dd0000;
+			background-position: $span-margin;
+			padding: $span-margin $span-margin $span-margin $span-margin;
+			color: #fff;
+			margin-bottom: $span-margin;		
+			ul {
+				margin: 0;
+				padding-left: $span-margin*2.5;
+			}
+	}
+}
 p.nodata, body .nodata, body #content .nodata, .warning, div.flash, .warning, .conflict {
 	border-width: 0;
 	margin: 0 0 10px;
