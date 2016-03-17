@@ -38,7 +38,7 @@ Well this thing looks typical.
 2. Restart Redmine instance.
 3. Activate theme inside settings.
 
-If after Redmine instance restart theme didn't appear in your list, please ensure that theme stylesheet available at the following location `/public/themes/dwarf/stypesheets/application.css`
+If after Redmine instance restart theme didn't appear in your list, please ensure that theme stylesheet available at the following location `/public/themes/dwarf/stylesheets/application.css`
 
 ### Settings
 At this moment there's no additional settings for theme, so everything you can manage - located inside stylesheets and javascript.
@@ -58,7 +58,7 @@ Attribution — You must give appropriate credit, provide a link to the license,
 * [Project page]
 * [Bring me a coffee]
 
-In case ff you found something unappropriate or I forgot mention someone please touch me and we fix it.
+In case you find something inappropriate or I forgot to mention someone please touch base with me and we will fix it.
 
 Developed by [Jared Denison] in 2014.
 
