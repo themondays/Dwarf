@@ -1771,16 +1771,16 @@ div.wiki h4 {
   .controller-wiki.action-show #content h1 {
     margin-left: 0; }
 
-.wiki {
+.wiki.editable .contextual {
+  padding: 0;
+  float: right; }
+.wiki a {
   word-break: break-all; }
-  .wiki.editable .contextual {
-    padding: 0;
-    float: right; }
-  .wiki h2, .wiki h3 {
-    background-color: transparent;
-    border-bottom: 0; }
-  .wiki img {
-    max-width: 98%; }
+.wiki h2, .wiki h3 {
+  background-color: transparent;
+  border-bottom: 0; }
+.wiki img {
+  max-width: 98%; }
 
 /**
  * Dwarf: News
@@ -2005,7 +2005,10 @@ tr.open span.expander {
     width: 100%;
     height: 100%;
     margin: 0;
-    position: absolute; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
   .controller-account.action-login #content {
     background: #000 url(../images/splash/splash2.jpg) no-repeat center;
     position: relative;

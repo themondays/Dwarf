@@ -32,7 +32,9 @@ div.wiki h4
 			float: right;
 		}
 	}
-	word-break: break-all;
+	a {
+		word-break: break-all;
+	}
 
 	h2, h3 {
 		background-color: transparent;
