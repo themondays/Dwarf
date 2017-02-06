@@ -1851,7 +1851,7 @@ table.list {
     text-align: left; }
   table.list tr td {
     font-size: 13px;
-    vertical-align: middle;
+    vertical-align: top;
     text-align: left; }
   table.list thead th {
     border: none;
